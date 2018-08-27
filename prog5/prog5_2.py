@@ -21,5 +21,5 @@ while True:
     elif n < smallest:
         smallest = n
 
-print("Maximum",largest)
-print("Minimum",smallest)
+print("Maximum is",largest)
+print("Minimum is",smallest)
