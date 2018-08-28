@@ -11,7 +11,8 @@ for line in fh:
     line = line.rstrip()
     temp  = line.split()
     for i in temp:
-        lst.append(i)
+        if i not in lst:
+            lst.append(i)
 
 lst.sort()
 print(lst)
