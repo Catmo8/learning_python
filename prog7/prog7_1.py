@@ -7,4 +7,4 @@ except:
     quit()
 
 for line in fh:
-    print(line.rstrip())
+    print(line.upper().rstrip())
