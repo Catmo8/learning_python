@@ -6,14 +6,14 @@ except:
     print("File name does not exist!")
     quit()
 
-sum = 0
+s = 0
 count = 0
 for line in fh:
     if not line.startswith("X-DSPAM-Confidence:"): continue
     start = line.find('0')
     num = float(line[start:])
-    sum = sum + num
+    s = s + num
     count = count + 1
 
-average = sum / count
+average = s / count
 print("Average spam confidence:",average)
