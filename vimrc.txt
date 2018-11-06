@@ -1,0 +1,39 @@
+"Colors
+colorscheme desert
+syntax on
+
+"Spaces & Tabs
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set wrap
+set noshiftround
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd FileType json setlocal ts=2 sts=2 sw=2
+autocmd FileType css setlocal ts=2 sts=2 sw=2
+
+"UI Config
+set number
+set ruler
+set showcmd
+set cursorline
+filetype indent on
+set wildmenu
+
+"Searching
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
+
+"Movement
+nnoremap j gj
+nnoremap k gk
+
+"Makes it easier to switch windows while in split mode
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
